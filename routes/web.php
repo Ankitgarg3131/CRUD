@@ -15,5 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 //Route::get('product{product}', 'productController@update')->name('update');
-Route::post('/product/api2/product', 'productController@update');
+/*Route::post('/product/api2/product', 'productController@update');
+Route::post('/product/api2/product/destroy', 'productController@destroy'); */
+
 Route::resource('product','productController');
